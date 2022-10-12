@@ -71,21 +71,21 @@ const LotteryCardData: IconCardData = {
 const bottomLeftImage = {
   path: '/images/home/prediction-cards/',
   attributes: [
-    { src: 'bottom-left', alt: 'CAKE card' },
-    { src: 'green', alt: 'Green CAKE card with up arrow' },
-    { src: 'red', alt: 'Red Cake card with down arrow' },
-    { src: 'top-right', alt: 'CAKE card' },
+    { src: 'launch', alt: 'CAKE card' },
+    { src: 'updown', alt: 'Green CAKE card with up arrow' },
+    { src: 'bull', alt: 'Red Cake card with down arrow' },
+    { src: 'tool', alt: 'CAKE card' },
   ],
 }
 
 const topRightImage = {
   path: '/images/home/lottery-balls/',
   attributes: [
-    { src: '2', alt: 'Lottery ball number 2' },
-    { src: '4', alt: 'Lottery ball number 4' },
-    { src: '6', alt: 'Lottery ball number 6' },
-    { src: '7', alt: 'Lottery ball number 7' },
-    { src: '9', alt: 'Lottery ball number 9' },
+    { src: 'green', alt: 'Lottery ball number 2' },
+    { src: 'pink', alt: 'Lottery ball number 4' },
+    { src: 'red', alt: 'Lottery ball number 6' },
+    { src: 'yellow', alt: 'Lottery ball number 7' },
+    { src: 'blue', alt: 'Lottery ball number 9' },
   ],
 }
 
