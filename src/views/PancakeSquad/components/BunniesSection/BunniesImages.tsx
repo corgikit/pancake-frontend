@@ -32,7 +32,7 @@ const BunniesImages: React.FC<React.PropsWithChildren<BunniesImages>> = ({ baseP
         <StyledBunnyImage
           $isSelected={index === selectedBunny}
           key={index}
-          src={`${basePath}${index}.png`}
+          src={`${basePath}${index}.webp`}
           alt={`${altText} example ${index}`}
         />
       ))}

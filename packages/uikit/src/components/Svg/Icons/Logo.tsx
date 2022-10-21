@@ -5,6 +5,8 @@ import { SvgProps } from "../types";
 const Icon: React.FC<React.PropsWithChildren<SvgProps>> = (props) => {
   return (
     <Svg viewBox="0 0 198 199" {...props}>
+      <image width="198px" height="199px" href="/logo.png" />
+      {/*
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -24,6 +26,7 @@ const Icon: React.FC<React.PropsWithChildren<SvgProps>> = (props) => {
         d="M75.614 117.896c0 9.718-4.593 14.779-10.258 14.779-5.665 0-10.258-5.061-10.258-14.779s4.593-14.779 10.258-14.779c5.665 0 10.258 5.061 10.258 14.779zM142.288 117.896c0 9.718-4.592 14.779-10.257 14.779-5.666 0-10.258-5.061-10.258-14.779s4.592-14.779 10.258-14.779c5.665 0 10.257 5.061 10.257 14.779z"
         fill="#633001"
       />
+  */}
     </Svg>
   );
 };

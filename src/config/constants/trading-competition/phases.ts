@@ -8,13 +8,13 @@ export const CompetitionPhases = {
   REGISTRATION: {
     state: REGISTRATION,
     // 2022–05–17 07:59 AM UTC
-    ends: 1652774399000,
+    ends: 16658207399000,
     step: { index: 0, text: 'Entry' },
   },
   LIVE: {
     state: LIVE,
     // 2022–05–24 07:59 AM UTC
-    ends: 1653379199000,
+    ends: 16658207399000,
     step: { index: 1, text: 'Live' },
   },
   FINISHED: {

@@ -46,6 +46,7 @@ const Footer: React.FC<React.PropsWithChildren<{ variant?: FooterVariant; helpUr
   const isSide = variant === 'side'
   return (
     <Wrapper $isSide={isSide}>
+      {/** 
       <Flex flexDirection={isSide ? 'column' : ['column', 'column', 'row']} alignItems="center">
         <ButtonMenu variant="subtle" scale="sm" activeIndex={0}>
           <ButtonMenuItem>V2</ButtonMenuItem>
@@ -63,6 +64,7 @@ const Footer: React.FC<React.PropsWithChildren<{ variant?: FooterVariant; helpUr
           {t('Convert ERC-20 to BEP-20')}
         </LinkExternal>
       </Flex>
+  */}
       {isSide && <Flex flexGrow={1} />}
       <Flex
         flexGrow={isSide ? 0 : 1}

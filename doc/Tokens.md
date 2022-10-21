@@ -4,6 +4,6 @@ All the tokens are in `/config/constans/tokens.ts`. They are instances of the `T
 Before adding a new **farm** or **pool** you need to make sure the Tokens are in this file.
 To add a Token to the exchange lists:
 
-- For the default list: `/config/constant/tokenLists/pancake-default.tokenlist.json`
-- For other lists, check the token-lists project in the `pancake-toolkit` repo
-- To blacklist a token: `/config/constant/tokenListspancake-unsupported.tokenlist.json`
+- For the default list: `/config/constant/tokenLists/zexdex-default.tokenlist.json`
+- For other lists, check the token-lists project in the `zexdex-toolkit` repo
+- To blacklist a token: `/config/constant/tokenListsZexdex-unsupported.tokenlist.json`

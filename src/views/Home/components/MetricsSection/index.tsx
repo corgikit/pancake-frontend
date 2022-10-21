@@ -1,4 +1,15 @@
-import { Heading, Flex, Text, Skeleton, ChartIcon, CommunityIcon, SwapIcon } from '@pancakeswap/uikit'
+import {
+  Heading,
+  Flex,
+  Text,
+  Skeleton,
+  ChartIcon,
+  CommunityIcon,
+  SwapIcon,
+  AccountIcon,
+  VolumeUpIcon,
+  NftIcon,
+} from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
 import useTheme from 'hooks/useTheme'
 import { formatLocalisedCompactNumber } from 'utils/formatBalance'
@@ -33,6 +44,18 @@ const Stats = () => {
     icon: <ChartIcon color="failure" width="36px" />,
   }
 
+  const AuditCardData: IconCardData = {
+    icon: <AccountIcon color="binance" width="36px" />,
+  }
+
+  const VolumeUpCardData: IconCardData = {
+    icon: <VolumeUpIcon color="text99" width="36px" />,
+  }
+
+  const NftCardData: IconCardData = {
+    icon: <NftIcon color="bronze" width="36px" />,
+  }
+
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
       <GradientLogo height="48px" width="48px" mb="24px" />
@@ -58,25 +81,49 @@ const Stats = () => {
       </Text>
 
       <Flex flexDirection={['column', null, null, 'row']}>
-        <IconCard {...UsersCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>
+        <IconCard {...UsersCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '32px']}>
           <StatCardContent
             headingText={t('%users% users', { users })}
             bodyText={t('in the last 30 days')}
             highlightColor={theme.colors.secondary}
           />
         </IconCard>
-        <IconCard {...TradesCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>
+        <IconCard {...TradesCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '32px']}>
           <StatCardContent
             headingText={t('%trades% trades', { trades })}
             bodyText={t('made in the last 30 days')}
             highlightColor={theme.colors.primary}
           />
         </IconCard>
-        <IconCard {...StakedCardData}>
+        <IconCard {...StakedCardData} mr={[null, null, null, null]} mb={['16px', null, null, '32px']}>
           <StatCardContent
             headingText={t('$%tvl% staked', { tvl: tvlString })}
             bodyText={t('Total Value Locked')}
             highlightColor={theme.colors.failure}
+          />
+        </IconCard>
+      </Flex>
+
+      <Flex flexDirection={['column', null, null, 'row']}>
+        <IconCard {...AuditCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>
+          <StatCardContent
+            headingText={t('%users% users', { users })}
+            bodyText={t('in the last 30 days')}
+            highlightColor={theme.colors.binance}
+          />
+        </IconCard>
+        <IconCard {...VolumeUpCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>
+          <StatCardContent
+            headingText={t('%trades% trades', { trades })}
+            bodyText={t('made in the last 30 days')}
+            highlightColor={theme.colors.text99}
+          />
+        </IconCard>
+        <IconCard {...NftCardData}>
+          <StatCardContent
+            headingText={t('$%tvl% staked', { tvl: tvlString })}
+            bodyText={t('Total Value Locked')}
+            highlightColor={theme.colors.bronze}
           />
         </IconCard>
       </Flex>

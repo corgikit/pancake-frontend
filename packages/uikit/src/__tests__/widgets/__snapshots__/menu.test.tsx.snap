@@ -3241,7 +3241,7 @@ exports[`renders correctly 1`] = `
                   scale="sm"
                   target="_blank"
                 >
-                  Buy CAKE
+                  Buy zDEX
                   <svg
                     class="c93"
                     color="backgroundAlt"

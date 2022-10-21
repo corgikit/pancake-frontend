@@ -8,12 +8,12 @@
     "downlevelIteration": true,
     "target": "es5",
     "paths": {
-      "@pancakeswap/sdk": ["../packages/swap-sdk/src/index.ts"],
-      "@pancakeswap/wagmi/connectors/binanceWallet": ["../packages/wagmi/connectors/binanceWallet/index.ts"],
-      "@pancakeswap/wagmi/connectors/miniProgram": ["../packages/wagmi/connectors/miniProgram/index.ts"],
-      "@pancakeswap/wagmi/chains": ["../packages/wagmi/chains/index.ts"],
-      "@pancakeswap/wagmi": ["../packages/wagmi/src/index.ts"],
-      "@pancakeswap/hooks": ["../packages/hooks/src/index.ts"]
+      "@zexdex.app/sdk": ["../packages/swap-sdk/src/index.ts"],
+      "@zexdex.app/wagmi/connectors/binanceWallet": ["../packages/wagmi/connectors/binanceWallet/index.ts"],
+      "@zexdex.app/wagmi/connectors/miniProgram": ["../packages/wagmi/connectors/miniProgram/index.ts"],
+      "@zexdex.app/wagmi/chains": ["../packages/wagmi/chains/index.ts"],
+      "@zexdex.app/wagmi": ["../packages/wagmi/src/index.ts"],
+      "@zexdex.app/hooks": ["../packages/hooks/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "cypress", "/apps/*"],
